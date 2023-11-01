@@ -1,0 +1,87 @@
+body {
+    font-family: "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0F170D;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 50rem; /* Use rem for scalability */
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1.25rem; /* Use rem for scalability */
+}
+
+a {
+    font-family: "joly-display", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color: #313C1B;
+}
+
+a:hover {
+    color: #AFC69A;
+}
+
+.teaser {
+    margin-bottom: 1.5rem; 
+}
+
+h2, h3 {
+    font-family: "joly-display", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #313C1B;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    margin-bottom: 0.2rem;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    font-family: "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0F170D;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: left;
+    background-color: #DD8835; 
+    color: #F2F0E9; 
+    padding: 0.1rem 0.1rem 0.1rem 1rem; 
+    font-family: "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
