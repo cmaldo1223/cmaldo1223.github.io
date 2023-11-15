@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/pkh4oeb.css">
+        <link rel="stylesheet" href="https://use.typekit.net/dym1mpp.css">
+        <title>HarvestHub Magazine</title> <!-- ★ Actual name of your publication -->
+
+        <!-- Helpful meta tags to fight GitHub aggressive caching-->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        
+    </head>	
+    <body>
+        <div class="newsletter">
+            <header>
+              <h1><a href="index.html"> <img src="logo.png" alt="Logo of HarvestHub."> </a></h1> 
+                <nav>
+                    <ul> <!-- ★ Use as many sections as you want, but replace the dashed lines with actual names for the sections of the publication. You may keep them all linked to the pound symbol, though. -->
+                        <li><a href="mainstory.html">Main Story</a></li>
+                        <li><a href="#">Health</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="photogallery.html">Gallery</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+                <main>
+                    <form class="subscribe">
+                        <h2>Subscribe to HarvestHub's Newsletter</h2>
+                        <section class="personalInfo">
+                            <h3> Personal Info</h3>
+                            <ul class="nameEmail">
+                                <li>
+                                    <label for="name">Name:</label>
+                                    <input id="name" type="text" name="name" placeholder="First and Last Name">
+                                </li>
+                                <li>
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email" placeholder="Email Address">
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="preferences">
+                            <h3>Select Your Newsletter Preferences</h3>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="news" value="news">
+                                    <label for="news">New Articles</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="vendorInfo" value="vendorInfo">
+                                    <label for="vendorInfo">Vendor Informatio</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="buyer" value="buyer">
+                                    <label for="buyer">A Costumers Guide</label>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="questions">
+                            <label for="questions">Have a Questions or Comment?</label>
+                            <textarea id="Inquiries" name="Inquiries"></textarea>
+                        </section>
+                        <section class="enter">
+                            <button type="enter">Enter</button>
+                        </section>
+                    </form>
+                </main>      
+
+                    <footer>
+                        <p>All rights reserved.</p>
+                    </footer>
+            </div>
+        </body>
+    </html>

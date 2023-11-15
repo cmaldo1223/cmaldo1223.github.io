@@ -32,6 +32,7 @@ nav li {
     margin-right: 1.25rem; /* Use rem for scalability */
 }
 
+
 a {
     font-family: "joly-display", sans-serif;
     font-weight: 700;
@@ -59,7 +60,7 @@ h2, h3 {
 }
 
 figure {
-    margin: 0;
+    margin: auto;
 }
 
 img {
@@ -71,7 +72,6 @@ figcaption {
     font-family: "indivisible", sans-serif;
     font-weight: 400;
     font-style: italic;
-    margin-bottom: 1rem;
 }
 p {
     font-family: "indivisible", sans-serif;
@@ -86,19 +86,156 @@ p {
 }
 
 footer {
+    position: relative;
     text-align: left;
-    background-color: #DD8835; 
-    color: #F2F0E9; 
-    padding: 0.1rem 0.1rem 0.1rem 1rem; 
+    font-weight: 400;
+    font-style: italic;
+    font-family: "indivisible", sans-serif;
+}
+
+/*---gallery----*/
+
+main.photogallery {
+    position: relative;
+    overflow: hidden;
+    max-width: 80em;
+    grid-column: 1/3;
+    padding-bottom: calc(70% + 3em);
+}
+
+main.photogallery input {
+    display: none;
+}
+
+figure.photogallery {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+input:nth-of-type(1):checked ~ figure.photogallery:nth-of-type(1),
+input:nth-of-type(2):checked ~ figure.photogallery:nth-of-type(2),
+input:nth-of-type(3):checked ~ figure.photogallery:nth-of-type(3),
+input:nth-of-type(4):checked ~ figure.photogallery:nth-of-type(4),
+input:nth-of-type(5):checked ~ figure.photogallery:nth-of-type(5),
+input:nth-of-type(6):checked ~ figure.photogallery:nth-of-type(6),
+input:nth-of-type(7):checked ~ figure.photogallery:nth-of-type(7),
+input:nth-of-type(8):checked ~ figure.photogallery:nth-of-type(8){
+    opacity: 1;
+}
+
+nav.photogallery {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 0.2em;
+    max-width: 80em;
+    grid-column: 1/3;
+}
+
+img.photogallery {
+    width: 100%;
+}
+
+/*--newletter------*/
+div.newsletter{
+    max-width: 60em;
+    margin: auto;
+}
+
+form.subscribe{
+    grid-row: 1/4;
+    grid-column: 1/4;
+}
+
+section.personalInfo{
+    margin: 0;
+}
+
+section.personalInfo{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 2em; 
+}
+
+section.personalInfo ul li input[type="text"],
+section ul li input[type="email"],
+section ul li select {
+	flex: 0.3 0 10em;
+	box-sizing: border-box;
+}
+
+section.personalInfo ul li label{
+    flex:  0 0 5em;
+    font-family: "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section.preferences ul li label{
+    flex:  0 0 5em;
     font-family: "indivisible", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 
+section.preferences{
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+section.questions{
+    margin:0;
+    font-family: "joly-display", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+section.enter{
+    margin: 1em 0 2em 0;
+}
+
+ul.nameEmail{
+    list-style: none;
+    padding-left: 0; 
+    margin-right: 20rem; 
+    margin-bottom: 0rem;
+    font-family: "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+textarea{
+    box-sizing: border-box;
+    display: flex;
+    width: 47%;
+    padding-bottom: 2em;
+    font-family: "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button{
+    margin-top: 2em;
+}
+
+form.subscribe h2 h3{
+    font-family: "joly-display", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+form.subscribe h3{
+    font-size: 1em; 
+}
+
+
 @media screen and (min-width: 60em){
-     div.container {
-        display: grid;
+    div.container {
+    display: grid;
     grid-template-columns: 3fr 1fr;
     grid-gap: 0 1em;
     
@@ -125,7 +262,6 @@ footer {
     }
     section.mainstory a figure{
         flex: 1 0 10em;
-        /* background: teal; */
     }
     section.mainstory a h3{
         flex: 0 0 auto;
@@ -142,3 +278,4 @@ footer {
         width: 20em;
     }
 }
+
