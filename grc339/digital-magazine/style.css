@@ -1,12 +1,14 @@
-div.container {
-    max-width: 80rem; /* Use rem for scalability */
+body{
+    color: #DDD8C4;
+ }
+
+ div.container {
+    max-width: 80rem;
     margin: 0 auto;
-    /* background-color: rgb(213, 221, 221); */
 }
 
 header {
     text-align: center;
-    /* background-color: #8f8; */
 }
 
 section {
@@ -29,7 +31,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 1.25rem; /* Use rem for scalability */
+    margin-right: 1.25rem; 
 }
 
 
@@ -65,7 +67,7 @@ figure {
 
 img {
     width: 100%;
-    padding-top: 1rem;
+    padding:auto;
 }
 
 figcaption {
@@ -278,4 +280,31 @@ form.subscribe h3{
         width: 20em;
     }
 }
+
+@media screen and (prefers-color-scheme: dark) {
+body{
+   background-color: #181e0d;
+}
+h1 {  
+    padding: auto; 
+    background-image: url("darklogo.svg");  
+    background-repeat: no-repeat;  
+    background-size: contain;  
+    }  
+ h1 img {  
+    opacity: 0;  
+     }      
+h2, p{
+    color:#DDD8C4;
+}
+
+h3 {
+    color: #AFC69A;
+}
+
+a{
+    color:#DDD8C4
+}
+}
+
 
