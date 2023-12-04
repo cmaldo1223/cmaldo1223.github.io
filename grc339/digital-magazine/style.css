@@ -1,7 +1,6 @@
-body{
-    color: #DDD8C4;
- }
-
+body {
+    color: #0F170D;
+}
  div.container {
     max-width: 80rem;
     margin: 0 auto;
@@ -284,6 +283,7 @@ form.subscribe h3{
 @media screen and (prefers-color-scheme: dark) {
 body{
    background-color: #181e0d;
+   color:#DDD8C4;
 }
 h1 {  
     padding: auto; 
@@ -306,5 +306,3 @@ a{
     color:#DDD8C4
 }
 }
-
-
